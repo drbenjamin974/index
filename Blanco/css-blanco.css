@@ -1,0 +1,247 @@
+   
+    @font-face{
+        font-family: montserrat;
+        src: url("./Fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+header{
+    display: flex;
+}
+section{
+    font-family: montserrat;
+    color:white;
+    height: 1800px;
+    
+}
+section p{
+    font-size: 41px;
+}
+section .sous, .sous2, .sous3{
+    font-size: 21px;
+}
+.titre{
+    margin-left: 190px;
+}
+.burger{
+    position: absolute;
+    right: 200px;
+    margin-top: 30px; 
+}
+.grande{
+    position: static;
+    width: 80%; 
+    margin: 0px 80px 5px 80px;
+    filter: contrast(125%);
+    
+}
+.mots{
+    position: absolute;
+    padding-bottom: 60px;
+    font-size: 50px;
+    font-weight: bold;
+}
+.mots2{
+    position: absolute;
+    margin-top: 130px;
+    font-size: 30px;
+    font-weight: bold;
+    border: 5px white solid;
+}
+.banniere{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#photo1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+
+}
+.droite{
+    position: relative;
+    margin: -5px 0px 0px 5px;
+    
+}
+.p{
+    position: absolute;
+    padding-bottom: 18px;
+}
+.sous{
+    position: absolute;
+    margin-top: 4%;
+}
+.cadre1{
+    position: absolute;
+    margin: auto;
+}
+#photo2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    max-width: 90%;
+       
+}
+.gauche{
+    position: relative;
+    bottom: 474px;
+    margin: 0px 0px 0px 0px;
+}
+.p3{
+    position: absolute;
+    right: 508px;
+    bottom: -636px;
+    
+}
+.sous2{
+    position: absolute;
+    right: 500px;
+    bottom: -630px;
+}
+.cadre2{
+    position: absolute;
+    top: 1075px;
+    left: 1266px;
+}
+#photo3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    position: relative;
+    bottom: 478px; 
+    
+}
+.basdroite{
+    position: relative;
+    margin: 3px 0px 0px 5px;
+}
+#photo4{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 90%;
+    position: relative;
+    bottom: 951px;
+    
+}
+.basgauche{
+    position: relative;
+    margin: -1px 0px 0px 0px;
+}
+.p4{
+    position: absolute;
+    right: 244px;
+    bottom: 178px;
+}
+.sous3{
+    position: absolute;
+    right: 305px;
+    bottom: 160px;
+}
+.cadre3{
+    position: absolute;
+    right: 298px;
+}
+article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 190px 0px 190px;
+    font-size: 24px;
+    border: 1px  black solid;
+    margin: -40px 190px 0px 190px;
+
+}
+.points{
+    height: 50px;
+    width: 50px;
+    padding-top: 50px;
+    padding-left: 30px;
+}
+.petit-titre{
+    font-size: 23px;
+    padding-top: 40px;
+    opacity: 0.4;
+}
+.paraghraphe{
+    text-align: justify;
+    margin: 25px 200px 20px 200px;
+}
+.nom{
+    position: absolute;
+    left: 1180px;
+    top: 2150px;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.h1{
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+#posts{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 290px;
+    padding-left: 160px;
+}
+#feel{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 280px;
+    padding-right: 0px;
+    padding-left: 30px;
+}
+#tweets{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 290px;  
+    padding-right: 0px; 
+    padding-left: 50px; 
+}
+.ul{
+    list-style-type: none;
+    padding-left: 3px;
+    padding-top:15px;
+    padding-bottom: 15px;
+    margin: 0px 0px 0px 0px;
+}
+#sub{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 360px;
+    padding-right: 150px;
+    
+}
+.phrase{
+    text-align: left;
+    width: 350px;
+    height: 100px;
+    word-wrap: break-word;
+    padding-top: 20px;
+}
+.fleche{
+    position: absolute;
+    left: 1650px;
+    top: 2460px;
+    height: 16px;
+    width: 24px;
+}
+.email{
+    border: 2px black solid;
+    width: 330px;
+    padding: 10px;
+}
+strong{
+    font-weight: bold;
+}
