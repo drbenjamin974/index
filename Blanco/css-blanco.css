@@ -9,21 +9,21 @@ header{
 }
 section{
     font-family: montserrat;
-    color:white;
+    color: white;
     height: 1800px;
     
 }
 @media all and (max-width: 980px)
 {
     section{width: auto;
-    flex-direction: column;}
+            flex-direction: column;}
 }
 
 section p{
     font-size: 41px;
 }
-section .sous, .sous2, .sous3{
-    font-size: 21px;
+section .sous, .sous2, .sous3, .sous4{
+    font-size: 17px;
 }
 .titre{
     margin-left: 190px;
@@ -34,8 +34,7 @@ section .sous, .sous2, .sous3{
     margin-top: 30px; 
 }
 .grande{
-    position: static;
-    width: 80%; 
+    position: static; 
     margin: 0px 80px 5px 80px;
     filter: contrast(125%);
     
@@ -58,95 +57,105 @@ section .sous, .sous2, .sous3{
     align-items: center;
     justify-content: center;
 }
-#photo1{
+#photo1-2{
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 60%;
-
-}
-.droite{
-    margin: -5px 0px 0px 5px;
+    margin: -6px 0px 0px 0px;
     
 }
-.p{
+@media all and (max-width: 980px)
+{
+    #photo1-2{flex-direction: column;
+            width: auto;}
+}
+.droite{
+    margin-left: 10px; 
+    
+}
+@media all and (max-width: 980px)
+{
+    .droite{width: 100%;
+            height: 100%;}
+}
+.gauche{
+    margin-right: 10px;
+}
+.p1{
     position: absolute;
-    padding-bottom: 18px;
+    top: 1070px;
+    right: 1190px;
+
+}
+.p2{
+    position: absolute;
+    top: 1070px;
+    left: 1280px;
+    
 }
 .sous{
     position: absolute;
-    margin-top: 4%;
+    top: 174%;
+    left: 27%;
 }
 .cadre1{
     position: absolute;
-    margin: auto;
-}
-#photo2{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    max-width: 90%;
-       
-}
-.gauche{
-    position: relative;
-    bottom: 474px;
-    margin: 0px 0px 0px 0px;
-}
-.p3{
-    position: absolute;
-    right: 508px;
-    bottom: -636px;
-    
+    top: 1075px;
+    right: 1266px;
 }
 .sous2{
     position: absolute;
-    right: 500px;
-    bottom: -630px;
+    top: 174%;
+    right: 27%;
 }
 .cadre2{
     position: absolute;
-    top: 1075px;
+    top: 1073px;
     left: 1266px;
 }
-#photo3{
+#photo3-4{
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 60%;
-    position: relative;
-    bottom: 478px; 
+    margin: -5px 0px 0px 0px;
     
 }
-.basdroite{
-    margin: 3px 0px 0px 5px;
-}
-#photo4{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 90%;
-    position: relative;
-    bottom: 951px;
+
+@media all and (max-width: 980px)
+{
     
 }
-.basgauche{
-    margin: -1px 0px 0px 0px;
+
+.p3{
+    position: absolute;
+    top: 1530px;
+    right: 1270px;
 }
 .p4{
     position: absolute;
-    right: 244px;
-    bottom: 178px;
+    top: 1530px;
+    left: 1190px;
 }
 .sous3{
     position: absolute;
-    right: 305px;
-    bottom: 160px;
+    top: 1620px;
+    right: 1282px;
+}
+.sous4{
+    position: absolute;
+    top: 1620px;
+    left: 1282px;
+    margin: 17px 0px 17px 0px;
 }
 .cadre3{
     position: absolute;
-    right: 298px;
+    top: 1530px;
+    right: 1265px;
 }
+.cadre4{
+    position: absolute;
+    top: 1530px;
+    left: 1265px;
+}
+
 article{
     display: flex;
     flex-wrap: wrap;
@@ -154,12 +163,14 @@ article{
     padding: 0px 190px 0px 190px;
     font-size: 24px;
     border: 1px  black solid;
-    margin: -40px 190px 0px 190px;
+    margin: -40px 183px 40px 184px;
 
 }
 @media all and (max-width: 980px)
 {
-    article{align-items: center;}
+    article{align-items: center;
+            margin: 0px;
+            padding: 0px;}
 }
 .points{
     height: 50px;
@@ -176,20 +187,30 @@ article{
     text-align: justify;
     margin: 25px 200px 20px 200px;
 }
+@media all and (max-width: 980px)
+{
+    .paraghraphe{margin: 15px;}
+}
 .nom{
     position: absolute;
-    left: 1180px;
-    top: 2150px;
+    left: 1190px;
+    top: 2140px;
+}
+@media all and (max-width: 980px)
+{
+    .nom{position: static;
+        padding-left: 200px;}
 }
 footer{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 50px;
     
 }
 @media all and (max-width: 980px)
 {
     footer{flex-direction: column;
-    align-items: flex-start;}
+    align-items: center;}
 }
 .h1{
     text-align: left;
@@ -204,6 +225,10 @@ footer{
     width: 290px;
     padding-left: 160px;
 }
+@media all and (max-width: 980px)
+{
+    #posts{padding-left: 0px;}
+}
 #feel{
     display: flex;
     justify-content: space-around;
@@ -212,6 +237,10 @@ footer{
     padding-right: 0px;
     padding-left: 30px;
 }
+@media all and (max-width: 980px)
+{
+    #feel{padding-left: 0px;}
+}
 #tweets{
     display: flex;
     justify-content: space-around;
@@ -219,6 +248,10 @@ footer{
     width: 290px;  
     padding-right: 0px; 
     padding-left: 50px; 
+}
+@media all and (max-width: 980px)
+{
+    #tweets{padding-left: 0px;}
 }
 .ul{
     list-style-type: none;
@@ -233,7 +266,10 @@ footer{
     flex-direction: column;
     width: 360px;
     padding-right: 150px;
-    
+}
+@media all and (max-width: 980px)
+{
+    #sub{padding-right: 0px;}
 }
 .phrase{
     text-align: left;
@@ -245,9 +281,14 @@ footer{
 .fleche{
     position: absolute;
     left: 1650px;
-    top: 2460px;
+    top: 2470px;
     height: 16px;
     width: 24px;
+}
+@media all and (max-width: 980px)
+{
+    .fleche{position: static;
+            right: 100px;}
 }
 .email{
     border: 2px black solid;
