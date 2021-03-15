@@ -16,11 +16,16 @@ section{
 @media all and (max-width: 980px)
 {
     section{width: auto;
+            height: auto;
             flex-direction: column;}
 }
 
 section p{
     font-size: 41px;
+}
+@media all and (max-width: 980px)
+{
+    section p{font-size: large;}
 }
 section .sous, .sous2, .sous3, .sous4{
     font-size: 17px;
@@ -41,13 +46,13 @@ section .sous, .sous2, .sous3, .sous4{
 }
 .mots{
     position: absolute;
-    padding-bottom: 60px;
+    padding-bottom: 48px;
     font-size: 50px;
     font-weight: bold;
 }
 .mots2{
     position: absolute;
-    margin-top: 130px;
+    margin-top: 50px;
     font-size: 30px;
     font-weight: bold;
     border: 5px white solid;
@@ -57,60 +62,76 @@ section .sous, .sous2, .sous3, .sous4{
     align-items: center;
     justify-content: center;
 }
+@media all and (max-width: 980px)
+{
+    .banniere{width: 100%;
+             height: 20%;}
+    .grande{margin: 0px 0px 0px 0px;
+            height: 100%;
+            width: 100%;}
+    .mots{font-size:large;
+         text-align: center;}
+    .mots2{font-size: small;}
+    .titre{margin-left: 5px;}
+    .burger{right: 30px;}
+}
 #photo1-2{
     display: flex;
     justify-content: center;
     margin: -6px 0px 0px 0px;
     
 }
+#photo1, #photo2{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media all and (max-width: 980px)
 {
-    #photo1-2{flex-direction: column;
-            width: auto;}
+    #photo1-2{flex-direction: column;}
+    
 }
 .droite{
-    margin-left: 10px; 
+    margin-left: 10px;
     
 }
 @media all and (max-width: 980px)
 {
     .droite{width: 100%;
-            height: 100%;}
+            height: 100%;
+            margin-left: 0px;}
 }
 .gauche{
     margin-right: 10px;
 }
+@media all and (max-width: 980px)
+{
+    .gauche{margin-right: 0px;}
+}
 .p1{
     position: absolute;
-    top: 1070px;
-    right: 1190px;
-
+    top: 34%;
 }
 .p2{
     position: absolute;
-    top: 1070px;
-    left: 1280px;
-    
+    top: 34%;
 }
-.sous{
+.sous, .sous2{
     position: absolute;
-    top: 174%;
-    left: 27%;
+    bottom: 40%;
 }
-.cadre1{
+.cadre1, .cadre2{
     position: absolute;
-    top: 1075px;
-    right: 1266px;
 }
-.sous2{
-    position: absolute;
-    top: 174%;
-    right: 27%;
-}
-.cadre2{
-    position: absolute;
-    top: 1073px;
-    left: 1266px;
+@media all and (max-width: 980px)
+{
+    .cadre1, .cadre2{width: 30%;
+                    height: 45%;}
+    .p1{font-size: large;
+        text-align: center;
+        position: absolute;}
+    .sous{font-size: 5px;}
 }
 #photo3-4{
     display: flex;
@@ -118,44 +139,47 @@ section .sous, .sous2, .sous3, .sous4{
     margin: -5px 0px 0px 0px;
     
 }
-
+#photo3, #photo4{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media all and (max-width: 980px)
 {
+    #photo3-4{flex-direction: column;}
+}
+@media all and (max-width: 980px)
+{
+    .basgauche{width: 100%;
+             height: 100%;}
+    .basdroite{width: 100%;
+             height: 100%;}
     
 }
-
 .p3{
     position: absolute;
-    top: 1530px;
-    right: 1270px;
+    top: 34%;
+    
 }
 .p4{
     position: absolute;
-    top: 1530px;
-    left: 1190px;
+    top: 34%;
+    
 }
-.sous3{
+.sous3, .sous4{
     position: absolute;
-    top: 1620px;
-    right: 1282px;
+    bottom: 40%;
+    
 }
-.sous4{
+.cadre3, .cadre4{
     position: absolute;
-    top: 1620px;
-    left: 1282px;
-    margin: 17px 0px 17px 0px;
 }
-.cadre3{
-    position: absolute;
-    top: 1530px;
-    right: 1265px;
+@media all and (max-width: 980px)
+{
+    .cadre3, .cadre4{width: 30%;
+                    height: 45%;}
 }
-.cadre4{
-    position: absolute;
-    top: 1530px;
-    left: 1265px;
-}
-
 article{
     display: flex;
     flex-wrap: wrap;
@@ -169,7 +193,7 @@ article{
 @media all and (max-width: 980px)
 {
     article{align-items: center;
-            margin: 0px;
+            margin: 10px 0px 20px 0px;
             padding: 0px;}
 }
 .points{
@@ -274,21 +298,21 @@ footer{
 .phrase{
     text-align: left;
     width: 350px;
-    height: 100px;
     word-wrap: break-word;
     padding-top: 20px;
 }
 .fleche{
     position: absolute;
     left: 1650px;
-    top: 2470px;
+    top: 2444px;
     height: 16px;
     width: 24px;
 }
 @media all and (max-width: 980px)
 {
-    .fleche{position: static;
-            right: 100px;}
+    .fleche{position: absolute;
+            left: 320px;
+            top: 322.3%;}
 }
 .email{
     border: 2px black solid;
