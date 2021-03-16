@@ -49,6 +49,7 @@ section .sous, .sous2, .sous3, .sous4{
     padding-bottom: 48px;
     font-size: 50px;
     font-weight: bold;
+    margin-top: 0px;
 }
 .mots2{
     position: absolute;
@@ -70,8 +71,10 @@ section .sous, .sous2, .sous3, .sous4{
             height: 100%;
             width: 100%;}
     .mots{font-size:large;
-         text-align: center;}
-    .mots2{font-size: small;}
+         text-align: center;
+          margin-top: 40px;}
+    .mots2{font-size: small;
+           border: 2px white solid;}
     .titre{margin-left: 5px;}
     .burger{right: 30px;}
 }
@@ -229,12 +232,16 @@ footer{
     display: flex;
     justify-content: space-around;
     margin-bottom: 50px;
-    
 }
-@media all and (max-width: 980px)
+@media all and (max-width: 600px)
 {
     footer{flex-direction: column;
-    align-items: center;}
+           align-items: center;}
+}
+@media all and (max-width: 1340px)
+{
+    footer{flex-wrap: wrap;
+           align-items: center;}
 }
 .h1{
     text-align: left;
@@ -246,10 +253,11 @@ footer{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    width: 290px;
-    padding-left: 160px;
+    width: auto;
+    padding-left: 190px;
+    box-sizing: border-box;
 }
-@media all and (max-width: 980px)
+@media all and (max-width: 600px)
 {
     #posts{padding-left: 0px;}
 }
@@ -257,11 +265,14 @@ footer{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    width: 280px;
-    padding-right: 0px;
-    padding-left: 30px;
+    width: auto;
+    margin-left: 130px;
+    box-sizing: border-box;
 }
-@media all and (max-width: 980px)
+.pfeel{
+    width: 70%;
+}
+@media all and (max-width: 600px)
 {
     #feel{padding-left: 0px;}
 }
@@ -269,11 +280,10 @@ footer{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    width: 290px;  
-    padding-right: 0px; 
-    padding-left: 50px; 
+    width: auto; 
+    box-sizing: border-box;
 }
-@media all and (max-width: 980px)
+@media all and (max-width: 600px)
 {
     #tweets{padding-left: 0px;}
 }
@@ -288,12 +298,10 @@ footer{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    width: 360px;
-    padding-right: 150px;
-}
-@media all and (max-width: 980px)
-{
-    #sub{padding-right: 0px;}
+    width: auto;
+    padding-right: 190px;
+    padding-left: 30px;
+    box-sizing: border-box;
 }
 .phrase{
     text-align: left;
@@ -301,23 +309,32 @@ footer{
     word-wrap: break-word;
     padding-top: 20px;
 }
+@media all and (max-width: 600px)
+{
+    #sub{padding-right: 0px;
+         padding-left: 0px;
+         width: 290px;}
+    .phrase{width: auto;
+            padding-top: 0px;}
+}
 .fleche{
     position: absolute;
-    left: 1650px;
-    top: 2444px;
+    left: 87%;
+    top: 363.5%;
     height: 16px;
     width: 24px;
-}
-@media all and (max-width: 980px)
-{
-    .fleche{position: absolute;
-            left: 320px;
-            top: 322.3%;}
 }
 .email{
     border: 2px black solid;
     width: 330px;
     padding: 10px;
+}
+@media all and (max-width: 600px)
+{
+    .fleche{position: absolute;
+            left: 320px;
+            top: 322.3%;}
+    .email{width: auto;}
 }
 strong{
     font-weight: bold;
